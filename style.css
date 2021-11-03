@@ -1,20 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-family: "Concert One", cursive;
 }
 
 html {
-  font: size 62.5%;
+  font-size: 62.5%;
 }
+
 .container {
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .clock {
@@ -32,6 +33,7 @@ html {
   height: inherit;
   position: relative;
 }
+
 .numbers div {
   position: absolute;
   font-size: 2.5rem;
@@ -44,21 +46,25 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .three {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .six {
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .nine {
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .arrows {
   width: inherit;
   height: inherit;
@@ -69,15 +75,17 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 .arrows::before {
   content: "";
   width: 2.5rem;
   height: 2.5rem;
-  background-color: white;
+  background-color: #fff;
   border-radius: 50%;
   box-shadow: 0.2rem 0.2rem 0.5rem #777;
   z-index: 10;
 }
+
 .arrows div {
   width: 0.7rem;
   height: 12rem;
@@ -88,10 +96,12 @@ html {
   border-radius: 100% 100% 0 0;
   transform-origin: bottom center;
 }
+
 .arrows .hour {
   height: 10rem;
   transform: rotate(90deg);
 }
+
 .arrows .second {
   background-color: #24cfe6;
   transform: rotate(270deg);
